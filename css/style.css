@@ -13,7 +13,7 @@
 	width: 150px;
 	left: 890px;
 	top: 640px;
-	animation: mymove 3s infinite;
+	animation: mymove 7s infinite;
 	animation-direction: alternate;
 	transition-timing-function: linear;
 }
@@ -21,4 +21,19 @@
 @keyframes mymove {
 	from {right: 0px;}
 	to {left: 585px;}
+}
+
+.dragon{position: absolute;
+	height: 200px;
+	width: 450px;
+	left: 1470px;
+	top: 10px;
+	animation: mymove2 10s infinite;
+	animation-direction: alternate;
+	transition-timing-function: linear;
+}
+
+@keyframes mymove2 {
+	from {right: 0px:}
+	to {left: 600px;}
 }
