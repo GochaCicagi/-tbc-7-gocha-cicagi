@@ -6,6 +6,7 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .knight{
 	position: absolute;
@@ -13,24 +14,32 @@
 	width: 150px;
 	left: 890px;
 	top: 640px;
-	animation: mymove 7s infinite;
+	animation: mymove 6s infinite;
 	transform: rotate(-11deg);
 	transition-timing-function: linear;
+	animation-direction: alternate;
+	animation-timing-function:linear;
+	transition: all 2s;
 }
 
 @keyframes mymove {
 	from {right: 0px;}
 	to {left: 585px;}
 }
+.knight:hover {
+	transform: rotate(15deg);
+}
 
 .dragon{position: absolute;
 	height: 200px;
 	width: 450px;
-	left: 1470px;
+	left: 1450px;
 	top: 10px;
-	animation: mymove2 10s infinite;
+	animation: mymove2 9s infinite;
 	transition-timing-function: linear;
 	transform: rotate(-10deg);
+	animation-timing-function:linear;
+	animation-direction: alternate;
 }
 
 @keyframes mymove2 {
@@ -41,9 +50,12 @@
 .birds{position: absolute;
     width: 200px;
     height: 200px;
-    top: 240px;
+    top: -28px;
     left: 50px;
-    animation: birds 11s infinite;
+    animation: birds 5s infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+    transition-timing-function: linear;
    
 }
 @keyframes birds {
