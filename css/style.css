@@ -1,0 +1,24 @@
+.div1{
+	background-image: url(../images/castle4.jpg);
+	width: 1920px;
+    height: 945px;
+    position: relative;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.knight{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	left: 890px;
+	top: 640px;
+	animation: mymove 3s infinite;
+	animation-direction: alternate;
+	transition-timing-function: linear;
+}
+
+@keyframes mymove {
+	from {right: 0px;}
+	to {left: 585px;}
+}
