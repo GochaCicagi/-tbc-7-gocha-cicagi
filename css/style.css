@@ -35,11 +35,10 @@
 	width: 450px;
 	left: 1450px;
 	top: 10px;
-	animation: mymove2 9s infinite;
+	animation: mymove2 6s infinite;
 	transition-timing-function: linear;
 	transform: rotate(-10deg);
 	animation-timing-function:linear;
-	animation-direction: alternate;
 }
 
 @keyframes mymove2 {
@@ -61,4 +60,17 @@
 @keyframes birds {
 	from{right: 50px}
 	to{left: 480px}
+}
+.knight2{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	transition: all 1s;
+	top: 620px;
+	left: 1020px;
+	transform: translate(0,0);
+	transform: rotate(-17deg);
+}
+.knight2:hover {
+	transform: translate(190px,-70px);
 }
