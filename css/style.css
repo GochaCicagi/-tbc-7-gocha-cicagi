@@ -14,7 +14,7 @@
 	left: 890px;
 	top: 640px;
 	animation: mymove 7s infinite;
-	animation-direction: alternate;
+	transform: rotate(-11deg);
 	transition-timing-function: linear;
 }
 
@@ -29,11 +29,24 @@
 	left: 1470px;
 	top: 10px;
 	animation: mymove2 10s infinite;
-	animation-direction: alternate;
 	transition-timing-function: linear;
+	transform: rotate(-10deg);
 }
 
 @keyframes mymove2 {
 	from {right: 0px:}
 	to {left: 600px;}
+}
+
+.birds{position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 240px;
+    left: 50px;
+    animation: birds 11s infinite;
+   
+}
+@keyframes birds {
+	from{right: 50px}
+	to{left: 480px}
 }
